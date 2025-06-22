@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Soni Kumari Sah | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Salary Predictor</title>
 </head>
 <body>
-    <header>
-        <h1>Soni Kumari Sah</h1>
-        <p>Machine Learning Enthusiast | CSIT Student</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>I am a passionate CSIT student focused on Machine Learning and Python development. Currently building my skills in ML, data science, and problem-solving.</p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Salary Predictor:</strong> ML project using Linear Regression</li>
-            <li><strong>Student Result System:</strong> Python + CSV based marks calculator</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: sonikumari@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-    </section>
+  <h1>Salary Prediction</h1>
+  <form action="/predict" method="post">
+    <label>Years of Experience:</label>
+    <input type="number" name="experience" step="0.1" required>
+    <button type="submit">Predict</button>
+  </form>
+  <h2>{{ prediction_text }}</h2>
 </body>
 </html>
